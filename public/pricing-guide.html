@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Forever In Frame — Pricing Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:        #F3EDE4;
+  --bg-deep:   #E8DFD2;
+  --bg-dark:   #1A1715;
+  --ink:       #1A1715;
+  --ink-soft:  #3B332D;
+  --ink-muted: #6B5F54;
+  --line:      #C8B9A6;
+  --accent:    #8B6F4E;
+  --cream:     #FFF8EE;
+
+  --ff-display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --ff-body:    'Inter', system-ui, sans-serif;
+  --ff-mono:    'DM Mono', ui-monospace, monospace;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+
+@page{
+  size: A4 portrait;
+  margin: 0;
+}
+
+html, body{
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--ff-body);
+  font-weight: 300;
+  font-size: 11.5pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page{
+  width: 210mm;
+  height: 297mm;
+  position: relative;
+  overflow: hidden;
+  page-break-after: always;
+  break-after: page;
+  padding: 24mm 22mm;
+  display: flex;
+  flex-direction: column;
+}
+.page:last-child{ page-break-after: auto; }
+
+.display{
+  font-family: var(--ff-display);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+}
+em{ font-style: italic; }
+
+.mono{
+  font-family: var(--ff-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+.eyebrow{
+  display: flex; align-items: center; gap: 12px;
+  font-family: var(--ff-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.eyebrow .bar{ width: 42px; height: 1px; background: var(--accent); }
+
+/* ============ PAGE 1 — COVER ============ */
+.cover{
+  background: var(--bg-dark);
+  color: var(--cream);
+  padding: 0;
+}
+.cover .frame{
+  position: absolute; inset: 18mm;
+  border: 1px solid rgba(255,248,238,0.18);
+  pointer-events: none;
+}
+.cover .inner{
+  position: relative;
+  padding: 30mm 26mm;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cover .top{
+  display: flex; justify-content: space-between; align-items: flex-start;
+}
+.cover .mark{
+  font-family: var(--ff-display);
+  font-size: 18pt;
+  letter-spacing: 0.01em;
+}
+.cover .mark em{ font-style: italic; font-weight: 400; }
+.cover .top .meta{
+  font-family: var(--ff-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 1.9;
+  color: rgba(255,248,238,0.72);
+}
+.cover .top .meta span{ display: block; color: var(--accent); }
+
+.cover h1{
+  font-family: var(--ff-display);
+  font-weight: 300;
+  font-size: 82pt;
+  line-height: 0.9;
+  letter-spacing: -0.035em;
+  color: var(--cream);
+  margin-top: -6mm;
+}
+.cover h1 em{ font-style: italic; color: var(--accent); }
+
+.cover .tagline{
+  margin-top: 14mm;
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 18pt;
+  line-height: 1.35;
+  max-width: 46ch;
+  color: rgba(255,248,238,0.92);
+}
+
+.cover .foot{
+  display: flex; justify-content: space-between; align-items: flex-end;
+  font-family: var(--ff-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(255,248,238,0.72);
+}
+.cover .foot .dot{
+  width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
+  display: inline-block; margin-right: 10px; vertical-align: middle;
+}
+
+/* ============ MARQUEE BAND ============ */
+.band{
+  background: var(--bg-deep);
+  padding: 10mm 22mm;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 14pt;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.band .dot{
+  width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
+  display: inline-block; margin: 0 14px; vertical-align: middle;
+}
+
+/* ============ PAGE 2 — WELCOME ============ */
+.welcome .eyebrow{ margin-bottom: 18mm; }
+.welcome h2{
+  font-family: var(--ff-display);
+  font-weight: 300;
+  font-size: 52pt;
+  line-height: 0.96;
+  letter-spacing: -0.03em;
+  max-width: 14ch;
+}
+.welcome h2 em{ font-style: italic; color: var(--accent); }
+
+.welcome .lead{
+  margin-top: 14mm;
+  font-family: var(--ff-display);
+  font-weight: 300;
+  font-size: 17pt;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  max-width: 54ch;
+}
+
+.welcome .body-grid{
+  margin-top: auto;
+  padding-top: 16mm;
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 20mm;
+  border-top: 1px solid var(--line);
+}
+.welcome .body-grid h4{
+  font-family: var(--ff-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6mm;
+}
+.welcome .body-grid p{
+  font-size: 11pt; line-height: 1.65; color: var(--ink-soft);
+  max-width: 56ch;
+}
+.welcome .body-grid p + p{ margin-top: 5mm; }
+
+/* ============ PAGE 3 — CONTENTS / FILMS INTRO ============ */
+.contents .eyebrow{ margin-bottom: 16mm; }
+.contents h2{
+  font-family: var(--ff-display);
+  font-weight: 300;
+  font-size: 48pt;
+  line-height: 0.97;
+  letter-spacing: -0.03em;
+  max-width: 16ch;
+}
+.contents h2 em{ font-style: italic; color: var(--accent); }
+
+.contents .sub{
+  margin-top: 10mm;
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 15pt;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  max-width: 50ch;
+}
+
+.toc{
+  margin-top: 18mm;
+  border-top: 1px solid var(--line);
+}
+.toc .row{
+  display: grid;
+  grid-template-columns: 40px 1fr auto 120px;
+  align-items: baseline;
+  gap: 18px;
+  padding: 7mm 0;
+  border-bottom: 1px solid var(--line);
+}
+.toc .row .num{
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 14pt;
+  color: var(--accent);
+}
+.toc .row .name{
+  font-family: var(--ff-display);
+  font-size: 22pt;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.toc .row .name em{ font-style: italic; }
+.toc .row .dur{
+  font-family: var(--ff-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.toc .row .price{
+  font-family: var(--ff-display);
+  font-size: 15pt;
+  text-align: right;
+  color: var(--ink);
+}
+.toc .row .price em{
+  font-family: var(--ff-mono);
+  font-style: normal;
+  font-size: 8.5pt;
+  letter-spacing: 0.22em;
+  color: var(--ink-muted);
+  margin-right: 8px;
+  text-transform: uppercase;
+}
+
+.contents .foot{
+  margin-top: auto;
+  padding-top: 12mm;
+  display: flex; justify-content: space-between; align-items: flex-end;
+  font-family: var(--ff-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+/* ============ PACKAGE PAGES ============ */
+.pkg .top{
+  display: flex; justify-content: space-between; align-items: flex-start;
+  padding-bottom: 8mm;
+  border-bottom: 1px solid var(--line);
+}
+.pkg .top .tier{
+  display: flex; align-items: center; gap: 10px;
+  font-family: var(--ff-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.pkg .top .tier .dot{
+  width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
+}
+.pkg .top .tier .flag{
+  color: var(--accent);
+  margin-left: 14px;
+}
+.pkg .top .no{
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 20pt;
+  color: var(--accent);
+}
+
+.pkg h1{
+  margin-top: 14mm;
+  font-family: var(--ff-display);
+  font-weight: 300;
+  font-size: 78pt;
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+}
+.pkg h1 em{ font-style: italic; color: var(--accent); }
+
+.pkg .desc{
+  margin-top: 10mm;
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 16pt;
+  line-height: 1.4;
+  color: var(--ink-soft);
+  max-width: 42ch;
+}
+
+.pkg .details{
+  margin-top: 14mm;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 20mm;
+  padding-top: 12mm;
+  border-top: 1px solid var(--line);
+}
+
+.pkg .price-block .label{
+  font-family: var(--ff-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 4mm;
+}
+.pkg .price-block .num{
+  font-family: var(--ff-display);
+  font-weight: 300;
+  font-size: 62pt;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.pkg .price-block .num em{
+  font-style: italic;
+  color: var(--accent);
+  font-size: 36pt;
+  vertical-align: top;
+  margin-right: 4px;
+}
+.pkg .price-block .aud{
+  margin-top: 3mm;
+  font-family: var(--ff-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.pkg .price-block .travel{
+  margin-top: 8mm;
+  padding-top: 6mm;
+  border-top: 1px solid var(--line);
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 13pt;
+  line-height: 1.4;
+  color: var(--ink-soft);
+  max-width: 28ch;
+}
+
+.pkg .incl h4{
+  font-family: var(--ff-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6mm;
+}
+.pkg .incl ul{ list-style: none; }
+.pkg .incl li{
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  padding: 4mm 0;
+  border-bottom: 1px dashed var(--line);
+  font-size: 11pt;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+.pkg .incl li:last-child{ border-bottom: 0; }
+.pkg .incl li .n{
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 12pt;
+  color: var(--accent);
+}
+
+.pkg .foot{
+  margin-top: auto;
+  padding-top: 10mm;
+  display: flex; justify-content: space-between; align-items: flex-end;
+  font-family: var(--ff-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+/* ============ OTHER OCCASIONS ============ */
+.occasions .eyebrow{ margin-bottom: 14mm; }
+.occasions h2{
+  font-family: var(--ff-display);
+  font-weight: 300;
+  font-size: 48pt;
+  line-height: 0.97;
+  letter-spacing: -0.03em;
+  max-width: 14ch;
+}
+.occasions h2 em{ font-style: italic; color: var(--accent); }
+.occasions .sub{
+  margin-top: 8mm;
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 14pt;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  max-width: 50ch;
+}
+
+.occ-card{
+  margin-top: 10mm;
+  padding: 9mm 0;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 1fr 1.4fr auto;
+  gap: 10mm;
+  align-items: start;
+}
+.occ-card:last-of-type{ border-bottom: 1px solid var(--line); }
+.occ-card h3{
+  font-family: var(--ff-display);
+  font-weight: 400;
+  font-size: 28pt;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.occ-card h3 em{ font-style: italic; color: var(--accent); }
+.occ-card .tag{
+  margin-top: 3mm;
+  font-family: var(--ff-mono);
+  font-size: 8pt;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.occ-card .bullets{
+  list-style: none;
+  font-size: 10pt;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+.occ-card .bullets li{
+  padding-left: 14px;
+  position: relative;
+  padding-top: 0.7mm;
+  padding-bottom: 0.7mm;
+}
+.occ-card .bullets li::before{
+  content: ''; position: absolute; left: 0; top: 3.6mm;
+  width: 5px; height: 1px; background: var(--accent);
+}
+.occ-card .price{
+  font-family: var(--ff-display);
+  font-size: 26pt;
+  text-align: right;
+  white-space: nowrap;
+}
+.occ-card .price em{
+  font-style: italic;
+  color: var(--accent);
+  font-size: 16pt;
+  vertical-align: top;
+  margin-right: 2px;
+}
+.occ-card .price .from{
+  display: block;
+  font-family: var(--ff-mono);
+  font-size: 7.5pt;
+  font-style: normal;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-top: 2mm;
+}
+
+/* ============ CLOSING ============ */
+.closing{
+  background: var(--bg-dark);
+  color: var(--cream);
+  padding: 0;
+}
+.closing .frame{
+  position: absolute; inset: 18mm;
+  border: 1px solid rgba(255,248,238,0.18);
+  pointer-events: none;
+}
+.closing .inner{
+  position: relative;
+  padding: 30mm 26mm;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.closing .eyebrow{ color: rgba(255,248,238,0.62); }
+.closing .eyebrow .bar{ background: var(--accent); }
+.closing h2{
+  margin-top: 12mm;
+  font-family: var(--ff-display);
+  font-weight: 300;
+  font-size: 68pt;
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+  color: var(--cream);
+  max-width: 12ch;
+}
+.closing h2 em{ font-style: italic; color: var(--accent); }
+.closing .sub{
+  margin-top: 10mm;
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 17pt;
+  line-height: 1.4;
+  color: rgba(255,248,238,0.88);
+  max-width: 46ch;
+}
+
+.closing .contact{
+  margin-top: 14mm;
+  padding-top: 10mm;
+  border-top: 1px solid rgba(255,248,238,0.18);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14mm;
+}
+.closing .contact h4{
+  font-family: var(--ff-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 5mm;
+}
+.closing .contact p{
+  font-family: var(--ff-display);
+  font-size: 14pt;
+  color: var(--cream);
+  line-height: 1.4;
+}
+
+.closing .foot{
+  display: flex; justify-content: space-between; align-items: flex-end;
+  font-family: var(--ff-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(255,248,238,0.55);
+}
+.closing .foot em{
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 13pt;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--accent);
+}
+
+/* ============ PAGE NUMBER / RULE ============ */
+.page-rule{
+  position: absolute;
+  left: 22mm; right: 22mm; bottom: 14mm;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--ff-mono);
+  font-size: 8pt;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.page-rule em{
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 11pt;
+  letter-spacing: 0;
+  color: var(--accent);
+  text-transform: none;
+}
+</style>
+</head>
+<body>
+
+<!-- ============ PAGE 1 — COVER ============ -->
+<section class="page cover">
+  <div class="frame"></div>
+  <div class="inner">
+    <div class="top">
+      <div class="mark">Forever <em>In</em> Frame</div>
+      <div class="meta">
+        Collections &amp; Pricing
+        <span>2026 · 2027</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="eyebrow" style="color: rgba(255,248,238,0.7); margin-bottom: 12mm;">
+        <span class="bar" style="background: var(--accent);"></span>
+        <span>The Pricing Guide</span>
+      </div>
+      <h1>
+        Moments,<br/>
+        <em>held</em> in<br/>
+        motion.
+      </h1>
+      <p class="tagline">
+        A cinematic record of the day you&rsquo;ll want to remember — captured honestly, cut quietly, kept for a lifetime.
+      </p>
+    </div>
+
+    <div class="foot">
+      <div><span class="dot"></span>Brisbane &amp; Australia-wide</div>
+      <div>Forever In Frame / Wedding Films</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAGE 2 — WELCOME ============ -->
+<section class="page welcome">
+  <div class="eyebrow">
+    <span class="bar"></span>
+    <span>00 — Hello there</span>
+  </div>
+
+  <h2>
+    Thank you for<br/>
+    <em>being here.</em>
+  </h2>
+
+  <p class="lead">
+    What follows is a careful, honest look at how we work together — the collections, the inclusions, the numbers. Take your time with it.
+  </p>
+
+  <div class="body-grid">
+    <div>
+      <h4>The approach</h4>
+      <p>
+        I film weddings the way I like to watch them — patient, unhurried, and a little bit in love with the small things. The laugh before the vows. The hand on the small of a back during speeches. The way the light moves across a room you&rsquo;ve loved for an afternoon.
+      </p>
+    </div>
+    <div>
+      <h4>What&rsquo;s always included</h4>
+      <p>
+        Every collection includes licensed music through Musicbed, a cinematic colour grade, and a film delivered in a private online gallery you can share with family for years. No watermarks. No upsells. Just your film, returned to you.
+      </p>
+      <p>
+        Travel is included within the distance noted on each collection. Anywhere further is priced transparently &mdash; no surprises, ever.
+      </p>
+    </div>
+  </div>
+
+  <div class="page-rule">
+    <span>Forever In Frame &middot; Pricing Guide</span>
+    <span><em>02</em></span>
+  </div>
+</section>
+
+<!-- ============ BAND ============ -->
+<!-- (intentionally omitted to keep layout clean) -->
+
+<!-- ============ PAGE 3 — CONTENTS ============ -->
+<section class="page contents">
+  <div class="eyebrow">
+    <span class="bar"></span>
+    <span>01 — The Collections</span>
+  </div>
+
+  <h2>
+    Six ways<br/>
+    to <em>remember</em> it.
+  </h2>
+
+  <p class="sub">
+    Three wedding collections, and three companion films &mdash; engagements, anniversaries, and elopements &mdash; for the moments before and around the big one.
+  </p>
+
+  <div class="toc">
+    <div class="row">
+      <div class="num">i.</div>
+      <div class="name">The <em>Essentials</em></div>
+      <div class="dur">Full day · 20km inc.</div>
+      <div class="price"><em>from</em>$2,899</div>
+    </div>
+    <div class="row">
+      <div class="num">ii.</div>
+      <div class="name">The <em>Signature</em></div>
+      <div class="dur">Full day · 100km inc.</div>
+      <div class="price"><em>from</em>$3,799</div>
+    </div>
+    <div class="row">
+      <div class="num">iii.</div>
+      <div class="name">The <em>Luxury</em></div>
+      <div class="dur">Full day · 100km inc.</div>
+      <div class="price"><em>from</em>$4,499</div>
+    </div>
+    <div class="row">
+      <div class="num">iv.</div>
+      <div class="name">The <em>Engagement</em></div>
+      <div class="dur">2 hours · 25km inc.</div>
+      <div class="price"><em>from</em>$500</div>
+    </div>
+    <div class="row">
+      <div class="num">v.</div>
+      <div class="name">The <em>Anniversary</em></div>
+      <div class="dur">3 hours · 25km inc.</div>
+      <div class="price"><em>from</em>$1,499</div>
+    </div>
+    <div class="row">
+      <div class="num">vi.</div>
+      <div class="name">The <em>Elopement</em></div>
+      <div class="dur">4 hours · 50km inc.</div>
+      <div class="price"><em>from</em>$2,199</div>
+    </div>
+  </div>
+
+  <div class="page-rule">
+    <span>Contents</span>
+    <span><em>03</em></span>
+  </div>
+</section>
+
+<!-- ============ PAGE 4 — THE ESSENTIALS ============ -->
+<section class="page pkg">
+  <div class="top">
+    <div class="tier">
+      <span class="dot"></span>
+      <span>Wedding Collection · i.</span>
+    </div>
+    <div class="no">i.</div>
+  </div>
+
+  <h1>The <em>Essentials</em></h1>
+
+  <p class="desc">
+    The whole day, distilled. A single roaming camera, beautiful audio, and a highlight film you&rsquo;ll rewatch.
+  </p>
+
+  <div class="details">
+    <div class="price-block">
+      <div class="label">From</div>
+      <div class="num"><em>$</em>2,899</div>
+      <div class="aud">AUD · 20% deposit to hold the date</div>
+      <div class="travel">
+        Travel included within <em>20km</em> of Brisbane CBD.
+      </div>
+    </div>
+
+    <div class="incl">
+      <h4>Inclusions</h4>
+      <ul>
+        <li><span class="n">01</span><span>Complete day coverage &mdash; prep through send-off</span></li>
+        <li><span class="n">02</span><span>One roaming cinema camera</span></li>
+        <li><span class="n">03</span><span>Professional audio recording with one backup</span></li>
+        <li><span class="n">04</span><span>4&ndash;7 minute cinematic highlight film</span></li>
+        <li><span class="n">05</span><span>Licensed music through Musicbed</span></li>
+        <li><span class="n">06</span><span>Private online gallery &mdash; yours to share and keep</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="page-rule">
+    <span>The Essentials &middot; Wedding Collection</span>
+    <span><em>04</em></span>
+  </div>
+</section>
+
+<!-- ============ PAGE 5 — THE SIGNATURE ============ -->
+<section class="page pkg">
+  <div class="top">
+    <div class="tier">
+      <span class="dot"></span>
+      <span>Wedding Collection · ii.</span>
+      <span class="flag">&#10022; Most loved</span>
+    </div>
+    <div class="no">ii.</div>
+  </div>
+
+  <h1>The <em>Signature</em></h1>
+
+  <p class="desc">
+    The balanced choice. Multiple cameras, drone coverage, and a longer highlight &mdash; the whole day, properly held.
+  </p>
+
+  <div class="details">
+    <div class="price-block">
+      <div class="label">From</div>
+      <div class="num"><em>$</em>3,799</div>
+      <div class="aud">AUD · 20% deposit to hold the date</div>
+      <div class="travel">
+        Travel included within <em>100km</em> of Brisbane CBD.
+      </div>
+    </div>
+
+    <div class="incl">
+      <h4>Inclusions</h4>
+      <ul>
+        <li><span class="n">01</span><span>Complete day coverage &mdash; prep through send-off</span></li>
+        <li><span class="n">02</span><span>One roaming cinema camera</span></li>
+        <li><span class="n">03</span><span>Two stationary cameras for ceremony &amp; speeches</span></li>
+        <li><span class="n">04</span><span>Professional audio recording with two backups</span></li>
+        <li><span class="n">05</span><span>Drone footage where conditions &amp; permits allow</span></li>
+        <li><span class="n">06</span><span>5&ndash;10 minute cinematic highlight film</span></li>
+        <li><span class="n">07</span><span>Licensed music through Musicbed</span></li>
+        <li><span class="n">08</span><span>Private online gallery &mdash; yours to share and keep</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="page-rule">
+    <span>The Signature &middot; Wedding Collection</span>
+    <span><em>05</em></span>
+  </div>
+</section>
+
+<!-- ============ PAGE 6 — THE LUXURY ============ -->
+<section class="page pkg">
+  <div class="top">
+    <div class="tier">
+      <span class="dot"></span>
+      <span>Wedding Collection · iii.</span>
+      <span class="flag">&#10022; Everything held</span>
+    </div>
+    <div class="no">iii.</div>
+  </div>
+
+  <h1>The <em>Luxury</em></h1>
+
+  <p class="desc">
+    Every moment kept. The highlight film, a full documentary cut of the day, and a 60-second social edit.
+  </p>
+
+  <div class="details">
+    <div class="price-block">
+      <div class="label">From</div>
+      <div class="num"><em>$</em>4,499</div>
+      <div class="aud">AUD · 20% deposit to hold the date</div>
+      <div class="travel">
+        Travel included within <em>100km</em> of Brisbane CBD.
+      </div>
+    </div>
+
+    <div class="incl">
+      <h4>Inclusions</h4>
+      <ul>
+        <li><span class="n">01</span><span>Complete day coverage &mdash; prep through send-off</span></li>
+        <li><span class="n">02</span><span>One roaming cinema camera</span></li>
+        <li><span class="n">03</span><span>Two stationary cameras for ceremony &amp; speeches</span></li>
+        <li><span class="n">04</span><span>Professional audio recording with two backups</span></li>
+        <li><span class="n">05</span><span>Drone footage where conditions &amp; permits allow</span></li>
+        <li><span class="n">06</span><span>5&ndash;10 minute cinematic highlight film</span></li>
+        <li><span class="n">07</span><span>One-hour documentary film of the day</span></li>
+        <li><span class="n">08</span><span>60-second vertical social edit for sharing</span></li>
+        <li><span class="n">09</span><span>Licensed music through Musicbed</span></li>
+        <li><span class="n">10</span><span>Private online gallery &mdash; yours to share and keep</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="page-rule">
+    <span>The Luxury &middot; Wedding Collection</span>
+    <span><em>06</em></span>
+  </div>
+</section>
+
+<!-- ============ PAGE 7 — OTHER OCCASIONS ============ -->
+<section class="page occasions">
+  <div class="eyebrow">
+    <span class="bar"></span>
+    <span>02 — Companion Films</span>
+  </div>
+
+  <h2>
+    The moments<br/>
+    <em>around</em> the one.
+  </h2>
+
+  <p class="sub">
+    Shorter films for the chapters before and after &mdash; each one a small piece of the story, shot with the same care.
+  </p>
+
+  <div class="occ-card">
+    <div>
+      <h3>The <em>Engagement</em></h3>
+      <div class="tag">iv. · 2 hours · 25km included</div>
+    </div>
+    <ul class="bullets">
+      <li>One roaming cinema camera</li>
+      <li>Drone footage where permitted</li>
+      <li>2-minute cinematic highlight film</li>
+      <li>Licensed music through Musicbed</li>
+    </ul>
+    <div class="price"><em>$</em>500<span class="from">AUD · from</span></div>
+  </div>
+
+  <div class="occ-card">
+    <div>
+      <h3>The <em>Anniversary</em></h3>
+      <div class="tag">v. · 3 hours · 25km included</div>
+    </div>
+    <ul class="bullets">
+      <li>One roaming camera · two stationary</li>
+      <li>Professional audio with two backups</li>
+      <li>Drone footage where permitted</li>
+      <li>2&ndash;4 minute cinematic highlight film</li>
+      <li>Licensed music through Musicbed</li>
+    </ul>
+    <div class="price"><em>$</em>1,499<span class="from">AUD · from</span></div>
+  </div>
+
+  <div class="occ-card">
+    <div>
+      <h3>The <em>Elopement</em></h3>
+      <div class="tag">vi. · 4 hours · 50km included</div>
+    </div>
+    <ul class="bullets">
+      <li>One roaming camera · two stationary</li>
+      <li>Professional audio with two backups</li>
+      <li>Drone footage where permitted</li>
+      <li>3&ndash;7 minute cinematic highlight film</li>
+      <li>Licensed music through Musicbed</li>
+    </ul>
+    <div class="price"><em>$</em>2,199<span class="from">AUD · from</span></div>
+  </div>
+
+  <div class="page-rule">
+    <span>Companion Films &middot; Engagement · Anniversary · Elopement</span>
+    <span><em>07</em></span>
+  </div>
+</section>
+
+<!-- ============ PAGE 8 — CLOSING ============ -->
+<section class="page closing">
+  <div class="frame"></div>
+  <div class="inner">
+    <div>
+      <div class="eyebrow">
+        <span class="bar"></span>
+        <span>03 — Next step</span>
+      </div>
+
+      <h2>
+        Let&rsquo;s make<br/>
+        <em>your</em> film.
+      </h2>
+
+      <p class="sub">
+        If one of these feels right &mdash; or if you&rsquo;d like to mix and match &mdash; send me a note with your date and I&rsquo;ll reply personally with a full quote for your day.
+      </p>
+
+      <div class="contact">
+        <div>
+          <h4>Enquire</h4>
+          <p>foreverinframe.com.au<br/>/contact</p>
+        </div>
+        <div>
+          <h4>Email</h4>
+          <p>hello@<br/>foreverinframe.com.au</p>
+        </div>
+        <div>
+          <h4>Studio</h4>
+          <p>Brisbane, QLD<br/>Australia-wide</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <span>Forever In Frame &middot; 2026 / 2027 dates booking now</span>
+      <em>One wedding per day.</em>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
