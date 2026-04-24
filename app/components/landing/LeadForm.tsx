@@ -2,6 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 import { IMG } from "@/app/lib/data";
+import {
+  MAKE_WEBHOOK_URL,
+  getTrackingData,
+  newEventId,
+} from "@/app/lib/tracking";
+
+const META_PIXEL_ID = "872020001001784";
+const LEAD_VALUE_AUD = 3199;
 
 const BOOKING_URL = "https://calendly.com/forever-in-frame";
 const CALENDLY_SCRIPT_SRC =
@@ -14,9 +22,34 @@ type CalendlyGlobal = {
   }) => void;
 };
 
+type FbqAdvancedMatching = {
+  em?: string;
+  ph?: string;
+  fn?: string;
+  ln?: string;
+};
+
+type FbqEventOptions = {
+  eventID?: string;
+};
+
+type FbqFunction = {
+  (command: "init", pixelId: string, advancedMatching?: FbqAdvancedMatching): void;
+  (
+    command: "track" | "trackCustom",
+    eventName: string,
+    params?: Record<string, unknown>,
+    options?: FbqEventOptions
+  ): void;
+  queue?: unknown[];
+  loaded?: boolean;
+  version?: string;
+};
+
 declare global {
   interface Window {
     Calendly?: CalendlyGlobal;
+    fbq?: FbqFunction;
   }
 }
 
@@ -57,13 +90,93 @@ const empty: FormState = {
 export default function LeadForm() {
   const [form, setForm] = useState<FormState>(empty);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const calendarRef = useRef<HTMLDivElement>(null);
 
   const set = <K extends keyof FormState>(k: K, v: FormState[K]) =>
     setForm((f) => ({ ...f, [k]: v }));
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (submitting) return;
+    setSubmitting(true);
+    setSubmitError(null);
+
+    const tracking = getTrackingData();
+    const eventId = newEventId("lead");
+
+    const payload = {
+      // Form fields
+      firstName: form.firstName.trim(),
+      partnerName: form.partnerName.trim(),
+      email: form.email.trim(),
+      phone: form.phone.trim(),
+      weddingDate: form.date.trim(),
+      weddingLocation: form.venue.trim(),
+      message: form.message.trim(),
+      consultation: form.consultation,
+      foundUs: form.howHeard,
+
+      // Lead metadata
+      leadSource: "Forever In Frame landing page",
+      submittedAt: new Date().toISOString(),
+      pageUrl:
+        typeof window !== "undefined" ? window.location.href : undefined,
+      pageReferrer:
+        typeof document !== "undefined" ? document.referrer : undefined,
+      eventId, // match with Meta Lead event for future CAPI dedup
+
+      // Attribution
+      ...tracking,
+    };
+
+    try {
+      const res = await fetch(MAKE_WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) {
+        throw new Error(`Webhook returned ${res.status}`);
+      }
+    } catch (err) {
+      console.error("Lead submission failed:", err);
+      setSubmitError(
+        "Something went wrong sending your enquiry. Please try again, or email matthew@foreverinframe.com.au directly."
+      );
+      setSubmitting(false);
+      return;
+    }
+
+    // Fire Meta Pixel Lead with advanced matching + dedup ID
+    if (typeof window !== "undefined" && window.fbq) {
+      const email = form.email.toLowerCase().trim();
+      const phoneDigits = form.phone.replace(/\D/g, "");
+      const firstName = form.firstName.toLowerCase().trim();
+
+      window.fbq("init", META_PIXEL_ID, {
+        em: email || undefined,
+        ph: phoneDigits || undefined,
+        fn: firstName || undefined,
+      });
+
+      window.fbq(
+        "track",
+        "Lead",
+        {
+          content_name: "Wedding Film Enquiry",
+          content_category: form.consultation
+            ? "Consultation booked"
+            : "Form only",
+          value: LEAD_VALUE_AUD,
+          currency: "AUD",
+        },
+        { eventID: eventId }
+      );
+    }
+
+    setSubmitting(false);
     setSubmitted(true);
     document
       .getElementById("enquire")
@@ -290,13 +403,20 @@ export default function LeadForm() {
                 </div>
               </div>
 
+              {submitError && (
+                <div className="submit-error" role="alert">
+                  {submitError}
+                </div>
+              )}
+
               <div className="submit-row">
                 <div className="privacy">
                   Your details stay between us. I&apos;ll reply from my personal
                   inbox.
                 </div>
-                <button type="submit">
-                  Send enquiry <span className="arrow">↗</span>
+                <button type="submit" disabled={submitting}>
+                  {submitting ? "Sending…" : "Send enquiry"}{" "}
+                  <span className="arrow">↗</span>
                 </button>
               </div>
             </form>

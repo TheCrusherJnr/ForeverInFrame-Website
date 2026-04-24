@@ -1404,7 +1404,23 @@ form.contact button[type="submit"] {
   transition: background .3s ease, transform .3s ease;
   cursor: pointer;
 }
-form.contact button[type="submit"]:hover { background: var(--accent); transform: translateY(-2px); }
+form.contact button[type="submit"]:hover:not(:disabled) { background: var(--accent); transform: translateY(-2px); }
+form.contact button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.submit-error {
+  margin-top: 24px;
+  padding: 14px 18px;
+  border: 1px solid #b95a4a;
+  background: rgba(185, 90, 74, 0.08);
+  color: #8a3a2c;
+  font-family: var(--ff-body);
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-transform: none;
+}
 form.contact button[type="submit"] .arrow {
   font-family: var(--ff-display); font-style: italic; font-size: 16px; letter-spacing: 0;
 }

@@ -1,0 +1,421 @@
+================================================================
+FACEBOOK ADS — FOREVER IN FRAME
+Brisbane Wedding Videographer Landing Page
+================================================================
+
+HOW TO USE THIS FILE
+--------------------
+Each ad below is ready to paste into Meta Ads Manager. The four
+fields you need are:
+  - Primary Text (the caption above the media)
+  - Headline (bold text under the image/video)
+  - Description (one grey line under the headline)
+  - CTA Button (choose from Meta's preset list)
+
+Run ads in GROUPS of 2-3 variants per audience so Meta's algorithm
+can pick the winner. Swap creative every 10-14 days to avoid fatigue.
+
+================================================================
+CAMPAIGN STRUCTURE (recommended)
+================================================================
+
+OBJECTIVE:      Leads  (optimise for form submissions)
+BID STRATEGY:   Highest volume, no manual cap for first 7 days
+PIXEL EVENT:    LeadSubmitted  (install Meta Pixel on landing page)
+
+THREE CAMPAIGNS, LAYERED:
+
+  1. COLD  (60% of budget)
+     Interest-based + engaged couples in Brisbane
+     Use Ads 1, 2, 4, 7 (see below)
+
+  2. WARM  (25% of budget)
+     Video-view retargeting — people who watched 50%+ of any
+     video ad but didn't click through
+     Use Ads 3, 6, 7
+
+  3. HOT   (15% of budget)
+     Landing-page visitors who DIDN'T submit the form
+     Use Ads 5, 8 (retargeting + urgency)
+
+================================================================
+TARGETING
+================================================================
+
+LOCATION
+  Primary:      Brisbane + 50km radius
+  Secondary:    Rest of QLD
+  (wedding clients will travel; don't over-restrict)
+
+AGE / GENDER
+  Age:          24-40
+  Gender:       All (women research more, but couples co-decide)
+
+DETAILED TARGETING — pick 3-5 from this list
+
+  Interests:
+    Wedding
+    Wedding planning
+    Bridal (clothing)
+    Engagement rings
+    Wedding photography
+    Honeymoon
+    Brides (magazine)
+    Hitched.com.au
+    Easy Weddings
+
+  Life Events:
+    Recently engaged (3 months)
+    Recently engaged (6 months)
+    Recently engaged (1 year)
+
+  Behaviors:
+    Small business owners (higher budget)
+    Frequent travellers (destination-wedding budget)
+
+EXCLUSIONS
+  Wedding videographers/photographers (competitors)
+  Forever In Frame existing followers (unless retargeting)
+
+LOOKALIKES (once you have 100+ leads)
+  1% lookalike of LeadSubmitted event — best performer
+  2% lookalike of Instagram followers — broader reach
+
+================================================================
+AD 1  —  VIDEO, EMOTIONAL HOOK  (best for COLD)
+================================================================
+
+PRIMARY TEXT:
+The vows.
+The look your dad gives you as you walk down the aisle.
+The way the light falls during your first dance.
+
+These are the moments you don't want to forget.
+
+I'm Matthew — a Brisbane wedding videographer. I make cinematic,
+documentary-style films the way you'd actually want to remember
+the day. No stiff poses. No forced shots.
+
+Book this month and save $600 on my most-loved collection.
+Only a handful of 2026 dates remain. 2027 is filling fast.
+
+Check my availability in 60 seconds ↓
+
+HEADLINE:     Brisbane Wedding Films · Save $600
+DESCRIPTION:  Cinematic · Documentary · Delivered in 6-12 weeks
+CTA:          Learn More
+
+MEDIA:        30-60 sec edit of Jenna & Josh OR Grace & Michael
+              (both have strong emotional moments)
+              9:16 vertical for Reels/Stories,
+              4:5 or 1:1 for Feed
+              Burn subtitles in. 80% of viewers have sound OFF.
+
+================================================================
+AD 2  —  STATIC IMAGE, OFFER-FOCUSED  (best for COLD)
+================================================================
+
+PRIMARY TEXT:
+Booking your 2026 or 2027 wedding? 💍
+
+I'm Matthew — a Brisbane wedding videographer. This month, I'm
+taking $600 off my most-loved collection:
+
+✓ Up to 10 hours of coverage
+✓ 5-10 minute cinematic highlight film
+✓ Full ceremony and speeches delivered
+✓ Drone coverage where permitted
+✓ Free travel within 50km of Brisbane CBD
+✓ Yours to keep forever (unlimited downloads, no expiring links)
+✓ Delivered in 6-12 weeks
+
+$3,199 (normally $3,799). No deposit required to check your date.
+Book a 15-minute consultation and save another $200 on top.
+
+HEADLINE:     Save $600 on Your Wedding Film
+DESCRIPTION:  Brisbane · 50+ weddings · 5-star reviews
+CTA:          Get Offer
+
+MEDIA:        High-res still from the 4 films, bride laughing or
+              first-look reaction. Avoid posed group shots.
+
+================================================================
+AD 3  —  VIDEO, SHORT PUNCHY  (best for WARM / Reels)
+================================================================
+
+PRIMARY TEXT:
+Your wedding, as a film you'll watch forever. 🎞️
+
+Save $600 this month. Brisbane + Australia-wide.
+
+HEADLINE:     Wedding Films · $3,199 (was $3,799)
+DESCRIPTION:  April only. 2026/2027 dates.
+CTA:          Get Offer
+
+MEDIA:        15-second fast-cut montage. 9:16 vertical.
+              Text overlay in first 3 seconds: "Brisbane Wedding Films"
+              End card: offer + CTA
+
+================================================================
+AD 4  —  CAROUSEL, PORTFOLIO PROOF  (best for COLD)
+================================================================
+
+PRIMARY TEXT:
+50+ Brisbane couples. Films they still watch on anniversaries.
+
+Swipe through 4 recent weddings — Brad & Rachel, Jenna & Josh,
+Brandon & Cloris, Grace & Michael. Real couples. Real days.
+
+Save $600 this month on my most-loved collection.
+Free travel within 50km of Brisbane CBD. 2027 dates booking now.
+
+CAROUSEL CARDS (use YouTube thumbnails as the card images):
+
+  Card 1:
+    Image:        Brad & Rachel YouTube thumb
+    Headline:     Brad & Rachel
+    Description:  Braeside Estate
+
+  Card 2:
+    Image:        Jenna & Josh YouTube thumb
+    Headline:     Jenna & Josh
+    Description:  Goombungee, QLD
+
+  Card 3:
+    Image:        Brandon & Cloris YouTube thumb
+    Headline:     Brandon & Cloris
+    Description:  Gabbinbar Estate, Toowoomba
+
+  Card 4:
+    Image:        Grace & Michael YouTube thumb
+    Headline:     Grace & Michael
+    Description:  InterContinental Sanctuary Cove
+
+  Card 5 (OFFER):
+    Image:        Text overlay on dark film-still
+    Headline:     Save $600 this month
+    Description:  $3,199 · 2026/2027 dates
+
+CTA:          Learn More  (on all cards)
+
+================================================================
+AD 5  —  RETARGETING (visited site, didn't submit)  (HOT)
+================================================================
+
+PRIMARY TEXT:
+Hey — I noticed you were checking out my films the other day.
+No pressure at all, but I wanted to let you know my April offer
+ends soon.
+
+$600 off my most-loved Feature collection. Plus another $200 off
+if we jump on a 15-minute chat.
+
+That's $800 off a film you'll watch for the next 50 years.
+
+HEADLINE:     Your $800 off ends soon
+DESCRIPTION:  2026 dates almost gone. Secure yours.
+CTA:          Book Now
+
+MEDIA:        Same video/image they saw on the landing page —
+              familiarity lifts CTR on retargeting
+
+================================================================
+AD 6  —  INSTAGRAM REEL / STORY  (9:16, native-feel)
+================================================================
+
+PRIMARY TEXT:
+Don't skip this if you're planning a Brisbane wedding 🎞️
+
+HEADLINE:     Brisbane Wedding Films
+DESCRIPTION:  Save $600 this month
+CTA:          Learn More
+
+VIDEO STRUCTURE (30 seconds, 9:16):
+
+  0:00-0:03   HOOK — bride's first-look reaction or a vow moment
+              (NO logo, NO slate — just raw emotion)
+  0:03-0:08   Text overlay: "Your wedding — as a film you'll watch forever"
+              Cuts of 2-3 different couples
+  0:08-0:18   Quick montage: getting-ready, ceremony, speeches,
+              dance floor. Match cuts to music beat.
+  0:18-0:24   Text: "By Matthew · Brisbane · Australia-wide"
+              Single longer shot — a slow push-in
+  0:24-0:30   Offer text: "$600 OFF this month"
+              Clear CTA: "Check my date ↗"
+
+SHOOT NATIVE. Don't crop a horizontal video down — Meta's
+algorithm downranks obviously-cropped content.
+
+================================================================
+AD 7  —  PROBLEM / AGITATE / SOLVE  (best for COLD)
+================================================================
+
+PRIMARY TEXT:
+Ever watched a friend's wedding video and thought
+"I really hope ours doesn't look like that"?
+
+Too fast-cut. Too posed. Cheesy music. Drone shots that last
+10 seconds and add nothing.
+
+Mine aren't like that.
+
+I'm Matthew — a Brisbane wedding videographer. I shoot warm,
+documentary-style films the way you'd actually want to remember
+the day. The laugh during your vows. The look your dad gave
+across the aisle. The quiet moments between the big ones.
+
+Watch 4 recent films + grab $600 off my most-loved collection ↓
+
+HEADLINE:     Wedding Films That Don't Feel Cheap
+DESCRIPTION:  Cinematic. Honest. Brisbane-based.
+CTA:          Watch Videos
+
+MEDIA:        Side-by-side video or single long-form reel.
+              Lead with an authentic unposed moment.
+
+================================================================
+AD 8  —  URGENCY / SCARCITY  (end of campaign, HOT audience)
+================================================================
+
+PRIMARY TEXT:
+⏰ Last 72 hours on the April offer:
+
+$600 off Brisbane wedding films.
++ another $200 off if we jump on a 15-min call.
+= $800 saved on a film you'll watch forever.
+
+Limited 2026 dates. 2027 already filling fast.
+No deposit required to check your date.
+
+HEADLINE:     $800 off ends Friday 🎞️
+DESCRIPTION:  Brisbane · Australia-wide · 5-star reviews
+CTA:          Check Availability
+
+================================================================
+CREATIVE BEST PRACTICES
+================================================================
+
+1.  FIRST 3 SECONDS
+    Meta gives you 3 seconds to hook a scroller. Best openings:
+      - Bride's reaction during first look
+      - Father-daughter vow moment
+      - A quote overlaid on a beautiful clip
+    AVOID establishing shots of venues — they don't stop thumbs.
+
+2.  SUBTITLES ALWAYS
+    85% of Meta video is watched sound-off. Burn captions into
+    the video file (not Meta's auto-captions — they turn off).
+
+3.  VERTICAL FIRST
+    Export all video at 9:16 (1080×1920) for Reels/Stories.
+    Create a 1:1 (1080×1080) version for Feed if budget allows.
+    Don't upload horizontal — Meta downranks letterboxed content.
+
+4.  DYNAMIC CREATIVE
+    Upload 3-5 primary texts, 3-5 headlines, 3-5 videos/images
+    per ad set. Let Meta auto-combine. Typically lifts CTR 15-30%
+    vs fixed creative.
+
+5.  FREQUENCY CAP
+    Wedding audience is small and enthusiastic but fatigues fast.
+    Hard cap at 3 impressions per week, or rotate creative every
+    10-14 days.
+
+6.  LANDING PAGE CONGRUENCE
+    The ad promise must match what's visible above the fold on
+    the landing page. Your hero says "Your wedding, as a film
+    you'll watch forever" — use those exact words in at least
+    one ad variant. Lifts conversion ~20%.
+
+7.  PIXEL EVENTS TO TRACK
+      - PageView              (all visitors)
+      - ViewContent           (scrolled past hero)
+      - InitiateCheckout      (clicked "Check my date")
+      - Lead                  (form submitted)
+      - Schedule              (consultation toggled)
+    Optimise the campaign for Lead, not PageView.
+
+8.  LEAD QUALIFICATION
+    Including "from $3,199" in the ad copy filters budget-less
+    tyre-kickers but cuts volume ~30%. Start WITHOUT price for
+    first 7 days to gather data; add price only if form spam
+    becomes a problem.
+
+9.  COMMENTS ARE FREE SOCIAL PROOF
+    Engaged couples READ comments before clicking. Reply to
+    every comment within 4 hours (Meta rewards engagement).
+    Ask past clients to comment "Loved working with Matthew!"
+    on your top 1-2 ads.
+
+10. WEEKDAYS 6-9PM
+    Wedding research peaks weeknight evenings. If you're on a
+    tight budget, set a custom delivery schedule for 6-9pm AEST
+    Mon-Thu + all-day Sunday.
+
+================================================================
+TESTING FRAMEWORK (Week 1-4)
+================================================================
+
+WEEK 1 — DISCOVERY
+  Budget: $20/day
+  Run: Ads 1, 2, 4, 7 (cold creatives)
+  Goal: find the winning hook. Kill anything under 1% CTR.
+
+WEEK 2 — DOUBLE DOWN
+  Budget: $40-60/day (winner gets 70%)
+  Run: top ad from Week 1 + 2 new variants (same style, fresh copy)
+  Start warm retargeting (Ad 3) on $10/day
+
+WEEK 3 — FULL FUNNEL
+  Budget: $80/day
+  Cold:  $50/day   (winning cold creative)
+  Warm:  $20/day   (Ad 3, 6)
+  Hot:   $10/day   (Ad 5)
+
+WEEK 4 — OPTIMIZE
+  Budget: $100/day
+  Swap warm/hot creative for urgency (Ad 8)
+  Build 1% LAL from leads collected so far — scale the winner
+
+================================================================
+BUDGET & BENCHMARKS (Brisbane wedding niche, AUD)
+================================================================
+
+COST PER CLICK (CPC):     $0.60 - $1.20   (good)
+CLICK-THROUGH RATE (CTR): 1.5% - 3.5%     (good)
+COST PER LEAD (CPL):      $20 - $45       (good)
+LEAD-TO-BOOKED RATE:      8% - 15%        (industry average)
+COST PER BOOKED CLIENT:   $150 - $400
+
+EXAMPLE MATHS AT $40/DAY FOR 30 DAYS:
+  Spend:              $1,200
+  Leads:              ~30-40   (@ $30 CPL)
+  Booked clients:     ~3-6
+  Revenue:            $9,600-$19,200 (@ $3,199 avg)
+  ROAS:               8x - 16x
+
+================================================================
+COMPLIANCE NOTES (Meta ad policies)
+================================================================
+
+DO NOT USE:
+  - "You" / "your" pointing at physical traits, weight, illness
+  - "Perfect day" / "dream wedding" - flagged as aspirational
+  - Before/after comparisons (e.g. "with/without videography")
+  - Testimonial screenshots with names + faces unless consented
+
+SAFE PHRASING:
+  "Brisbane couples have trusted me to film 50+ weddings"  ✓
+  "Your wedding, as a film you'll watch forever"           ✓
+  "This month, save $600"                                  ✓
+
+MEDIA REQUIREMENTS:
+  - Max 20% text on static images (soft rule, but affects reach)
+  - No auto-playing audio in images
+  - No misleading "Play" buttons on static images
+  - No countdown timers inside the creative (use Meta's native
+    end-date scheduling instead)
+
+================================================================
+END OF FILE
+================================================================
