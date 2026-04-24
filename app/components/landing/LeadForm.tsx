@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { format } from "date-fns";
 import { IMG } from "@/app/lib/data";
 import {
   MAKE_WEBHOOK_URL,
   getTrackingData,
   newEventId,
 } from "@/app/lib/tracking";
+import DatePicker from "@/app/components/ui/DatePicker";
 
 const META_PIXEL_ID = "872020001001784";
 const LEAD_VALUE_AUD = 3199;
@@ -89,6 +91,7 @@ const empty: FormState = {
 
 export default function LeadForm() {
   const [form, setForm] = useState<FormState>(empty);
+  const [weddingDate, setWeddingDate] = useState<Date | undefined>(undefined);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -274,22 +277,43 @@ export default function LeadForm() {
               </div>
             </div>
           ) : (
-            <form className="contact lead-form" onSubmit={onSubmit}>
+            <form
+              className="contact lead-form"
+              onSubmit={onSubmit}
+              autoComplete="on"
+              noValidate={false}
+            >
               <div className="row">
                 <div>
-                  <label>
+                  <label htmlFor="lf-firstName">
                     Your first name <span className="req">*</span>
                   </label>
                   <input
+                    id="lf-firstName"
+                    name="firstName"
+                    type="text"
                     required
+                    autoComplete="given-name"
+                    autoCapitalize="words"
+                    autoCorrect="off"
+                    spellCheck={false}
                     value={form.firstName}
                     onChange={(e) => set("firstName", e.target.value)}
                     placeholder="e.g. Sarah"
                   />
                 </div>
                 <div>
-                  <label>Partner&apos;s first name</label>
+                  <label htmlFor="lf-partnerName">
+                    Partner&apos;s first name
+                  </label>
                   <input
+                    id="lf-partnerName"
+                    name="partnerFirstName"
+                    type="text"
+                    autoComplete="off"
+                    autoCapitalize="words"
+                    autoCorrect="off"
+                    spellCheck={false}
                     value={form.partnerName}
                     onChange={(e) => set("partnerName", e.target.value)}
                     placeholder="e.g. Baden"
@@ -299,21 +323,32 @@ export default function LeadForm() {
 
               <div className="row">
                 <div>
-                  <label>
+                  <label htmlFor="lf-email">
                     Email <span className="req">*</span>
                   </label>
                   <input
-                    required
+                    id="lf-email"
+                    name="email"
                     type="email"
+                    required
+                    autoComplete="email"
+                    inputMode="email"
+                    autoCapitalize="off"
+                    autoCorrect="off"
+                    spellCheck={false}
                     value={form.email}
                     onChange={(e) => set("email", e.target.value)}
                     placeholder="you@somewhere.com"
                   />
                 </div>
                 <div>
-                  <label>Phone</label>
+                  <label htmlFor="lf-phone">Phone</label>
                   <input
+                    id="lf-phone"
+                    name="phone"
                     type="tel"
+                    autoComplete="tel"
+                    inputMode="tel"
                     value={form.phone}
                     onChange={(e) => set("phone", e.target.value)}
                     placeholder="04XX XXX XXX"
@@ -323,17 +358,28 @@ export default function LeadForm() {
 
               <div className="row">
                 <div>
-                  <label>Wedding date (or approx.)</label>
-                  <input
-                    type="text"
-                    value={form.date}
-                    onChange={(e) => set("date", e.target.value)}
-                    placeholder="e.g. October 2027 — or TBC"
+                  <label htmlFor="lf-weddingDate">
+                    Wedding date (or approx.)
+                  </label>
+                  <DatePicker
+                    id="lf-weddingDate"
+                    name="weddingDate"
+                    value={weddingDate}
+                    onChange={(d) => {
+                      setWeddingDate(d);
+                      set("date", d ? format(d, "yyyy-MM-dd") : "");
+                    }}
+                    placeholder="Pick your wedding date"
                   />
                 </div>
                 <div>
-                  <label>Venue / location</label>
+                  <label htmlFor="lf-weddingLocation">Venue / location</label>
                   <input
+                    id="lf-weddingLocation"
+                    name="weddingLocation"
+                    type="text"
+                    autoComplete="address-level2"
+                    autoCapitalize="words"
                     value={form.venue}
                     onChange={(e) => set("venue", e.target.value)}
                     placeholder="Venue or suburb"
@@ -394,8 +440,13 @@ export default function LeadForm() {
 
               <div className="row single">
                 <div>
-                  <label>Anything else you&apos;d like me to know?</label>
+                  <label htmlFor="lf-message">
+                    Anything else you&apos;d like me to know?
+                  </label>
                   <textarea
+                    id="lf-message"
+                    name="message"
+                    autoComplete="off"
                     value={form.message}
                     onChange={(e) => set("message", e.target.value)}
                     placeholder="What makes your wedding perfect for you? What do you want your film to feel like?"
